@@ -14,12 +14,12 @@ module.exports = function (grunt, config) {
       }
 
       if (watch == "watch") {
-	if (mode == "lax") {
-	  grunt.task.run('watch:lax');
-	}
-	else {
-	  grunt.task.run('watch:strict');
-	}
+      	if (mode == "lax") {
+      	  grunt.task.run('watch:lax');
+      	}
+      	else {
+      	  grunt.task.run('watch:strict');
+      	}
       }
 
     });
