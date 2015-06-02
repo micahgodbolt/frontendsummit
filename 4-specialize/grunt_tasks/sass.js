@@ -29,11 +29,18 @@ module.exports = function (grunt, config) {
 
     // https://github.com/gruntjs/grunt-contrib-watch
     watch: {
-      sass: {
+      strict: {
+	files: config.scssDir + "style.scss",
+	tasks: [
+	  "sass",
+	  "csslint:strict"
+	]
+      },
+      lax: {
         files: config.scssDir + "style.scss",
         tasks: [
           "sass",
-          "csslint"
+	  "csslint:lax"
         ]
       }
     }

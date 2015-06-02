@@ -24,7 +24,7 @@ module.exports = function (grunt, config) {
     // https://github.com/gruntjs/grunt-contrib-watch
     watch: {
       sass: {
-        files: config.scssDir + "style.scss",
+	files: config.scssDir + "**/*.scss",
         tasks: [
           "sass",
           "csslint"

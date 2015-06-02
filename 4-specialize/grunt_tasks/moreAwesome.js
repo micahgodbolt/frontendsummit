@@ -8,6 +8,7 @@ module.exports = function (grunt, config) {
 
       if ( (watch == "lax") || (mode == "lax") ) {
         grunt.config.set('csslint.strict.options.important', false);
+	grunt.config.set('watch.strict.tasks.1', 'csslint:lax');
       }
 
       grunt.task.run('csslint:strict');
