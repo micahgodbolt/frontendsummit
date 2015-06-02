@@ -24,6 +24,7 @@
 - four: specialize
   - Strict vs Lax
   - Build vs Watch
+  - Show how tasks can be required as well
   - Tasks
     notsoawesome (set up a bunch of tasks)
     awesome (single task, call different targets)
